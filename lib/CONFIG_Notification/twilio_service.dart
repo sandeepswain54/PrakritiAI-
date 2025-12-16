@@ -3,11 +3,14 @@ import 'package:http/http.dart' as http;
 import 'package:flutter/foundation.dart';
 
 class TwilioService {
-  // Replace these with your actual Twilio credentials
-  static const String accountSid = 'YOUR_TWILIO_ACCOUNT_SID_IN_.ENV_FILE';
-  static const String authToken = 'YOUR_TWILIO_AUTH_TOKEN_IN_.ENV_FILE';
+  // ⚠️ SECURITY: Credentials should be loaded from environment variables or backend
+  // DO NOT hardcode sensitive credentials in source code
+  // Use flutter_dotenv to load from .env file (add .env to .gitignore)
+  
+  static late String accountSid;
+  static late String authToken;
   static const String fromNumber = 'whatsapp:+14155238886'; // Twilio sandbox number
-  static const String toNumber = 'whatsapp:+919861146508'; // Your WhatsApp number with country code
+  static late String toNumber;
 
   static Future<bool> sendWhatsAppMessage({
     required String serviceName,

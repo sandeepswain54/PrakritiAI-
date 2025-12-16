@@ -1,5 +1,6 @@
 # Miscellaneous
 *.class
+*.lock
 *.log
 *.pyc
 *.swp
@@ -12,21 +13,51 @@
 .swiftpm/
 migrate_working_dir/
 
-# Environment variables
+# ==================== SECRETS & CREDENTIALS ====================
+# Environment variables & Secrets
 .env
 .env.*
+!.env.example
+secrets/
+*.key
+*.pem
+*.p8
+*.p12
+*.pfx
+*.crt
+*.jks
+*.keystore
 
+# Credentials and API Keys
+google-services.json
+GoogleService-Info.plist
+keystore.properties
+firebase-key.json
+credentials.json
+token.json
+service-account-key.json
+
+# ==================== IDE & TOOLS ====================
 # IntelliJ related
 *.iml
 *.ipr
 *.iws
 .idea/
+.project
+.classpath
+.c9/
+*.launch
+.settings/
 
-# The .vscode folder contains launch configuration and tasks you configure in
-# VS Code which you may wish to be included in version control, so this line
-# is commented out by default.
-#.vscode/
+# VS Code
+.vscode/
+*.code-workspace
 
+# Sublime
+*.sublime-project
+*.sublime-workspace
+
+# ==================== FLUTTER/DART ====================
 # Flutter/Dart/Pub related
 **/doc/api/
 **/ios/Flutter/.last_build_id
@@ -36,6 +67,26 @@ migrate_working_dir/
 .pub-cache/
 .pub/
 /build/
+.packages
+.pub-preload-cache/
+**/generated_plugin_registrant.dart
+.g.dart
+.freezed.dart
+.config.dart
+
+# ==================== ANDROID ====================
+# Android Studio will place build artifacts here
+/android/app/debug
+/android/app/profile
+/android/app/release
+/android/.gradle/
+/android/local.properties
+/android/gradle.properties
+**/android/**/gradle-wrapper.jar
+**/android/captures/
+**/android/gradlew
+**/android/gradlew.bat
+**/android/**/GeneratedPluginRegistrant.java
 
 # Symbolication related
 app.*.symbols
@@ -43,83 +94,58 @@ app.*.symbols
 # Obfuscation related
 app.*.map.json
 
-# Android Studio will place build artifacts here
-/android/app/debug
-/android/app/profile
-/android/app/release
-# Firebase & Google Services
-google-services.json
-GoogleService-Info.plist
+# ==================== iOS/macOS ====================
+# iOS/XCode related
+**/ios/**/*.mode1v3
+**/ios/**/*.mode2v3
+**/ios/**/*.moved-aside
+**/ios/**/*.pbxuser
+**/ios/**/*.perspectivev3
+**/ios/**/*sync/
+**/ios/**/.sconsign.dblite
+**/ios/**/.tags*
+**/ios/**/.vagrant/
+**/ios/**/DerivedData/
+**/ios/**/Icon?
+**/ios/**/Pods/
+**/ios/**/.symlinks/
+**/ios/**/profile
+**/ios/**/xcuserdata
+**/ios/.generated/
+**/ios/Flutter/App.framework
+**/ios/Flutter/Flutter.framework
+**/ios/Flutter/Flutter.podspec
+**/ios/Flutter/Generated.xcconfig
+**/ios/Flutter/ephemeral
+**/ios/Flutter/app.flx
+**/ios/Flutter/app.zip
+**/ios/Flutter/flutter_assets/
+**/ios/Flutter/flutter_export_environment.sh
+**/ios/ServiceDefinitions.json
+**/ios/Runner/GeneratedPluginRegistrant.*
 
-# Android Local Properties
-android/local.properties
-local.properties
-keystore.properties
+# macOS
+**/Flutter/ephemeral/
+**/Pods/
+**/macos/Flutter/GeneratedPluginRegistrant.swift
+**/macos/Flutter/ephemeral
+**/xcuserdata/
 
-# API Keys and Secrets
-.env
-.env.local
-.env.*.local
-**/.env
-**/.env.local
+# ==================== OTHER PLATFORMS ====================
+# Windows
+**/windows/flutter/generated_plugin_registrant.cc
+**/windows/flutter/generated_plugin_registrant.h
+**/windows/flutter/generated_plugins.cmake
 
-# Credentials and tokens
-**/credentials.json
-**/token.json
-**/service-account-key.json
+# Linux
+**/linux/flutter/generated_plugin_registrant.cc
+**/linux/flutter/generated_plugin_registrant.h
+**/linux/flutter/generated_plugins.cmake
 
-# Mac OS specific
-.DS_Store
-
-# IDE specific
-.vscode/
-.idea/
-*.swp
-*.swo
-*~
-.project
-.classpath
-.c9/
-*.launch
-.settings/
-*.sublime-workspace
-
-# Dart specific
-.packages
-.dart_tool/
-.flutter-plugins
-.flutter-plugins-dependencies
-
-# Generated files
-.g.dart
-.freezed.dart
-.config.dart
-
-# Build outputs
-build/
-.dart_tool/
-.pub-cache/
-.pub/
-
+# ==================== BUILD & CACHE ====================
 # Coverage
 coverage/
-
-# Non-essential files
-*.iml
-*.ipr
-*.iws
 .gradle/
-
-# Keystore files
-*.jks
-*.keystore
-*.p12
-*.pfx
-
-# Private keys
-*.pem
-*.key
-*.crt
 
 # Database files  
 *.db
@@ -127,25 +153,38 @@ coverage/
 *.sqlite3
 
 # Logs
-*.log
 logs/
 
-# OS files
-Thumbs.db
+# ==================== OS SPECIFIC ====================
+# Mac
 .DS_Store
+.AppleDouble
+.LSOverride
 
-# Temporary files
+# Windows
+Thumbs.db
+ehthumbs.db
+
+# ==================== TEMPORARY FILES ====================
 *.tmp
 *.temp
-*.swp
+*.bak
 *.swo
 *~
+.#*
 
+# ==================== NODE/PYTHON ====================
 # Node modules (if used)
 node_modules/
 npm-debug.log
+yarn-debug.log*
+yarn-error.log*
 
 # Python
 __pycache__/
 *.py[cod]
 *$py.class
+venv/
+ENV/
+env/
+
