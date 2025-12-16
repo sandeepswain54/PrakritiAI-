@@ -1,0 +1,9 @@
+targets:
+  $default:
+    generators:
+      - flutter_gen_runner:main
+        options:
+          integrations:
+            - flutter_gen_runner/integrations/color
+            - flutter_gen_runner/integrations/colors
+            - flutter_gen_runner/integrations/string

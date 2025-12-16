@@ -1,0 +1,151 @@
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.build/
+.buildlog/
+.history
+.svn/
+.swiftpm/
+migrate_working_dir/
+
+# Environment variables
+.env
+.env.*
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# The .vscode folder contains launch configuration and tasks you configure in
+# VS Code which you may wish to be included in version control, so this line
+# is commented out by default.
+#.vscode/
+
+# Flutter/Dart/Pub related
+**/doc/api/
+**/ios/Flutter/.last_build_id
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+/build/
+
+# Symbolication related
+app.*.symbols
+
+# Obfuscation related
+app.*.map.json
+
+# Android Studio will place build artifacts here
+/android/app/debug
+/android/app/profile
+/android/app/release
+# Firebase & Google Services
+google-services.json
+GoogleService-Info.plist
+
+# Android Local Properties
+android/local.properties
+local.properties
+keystore.properties
+
+# API Keys and Secrets
+.env
+.env.local
+.env.*.local
+**/.env
+**/.env.local
+
+# Credentials and tokens
+**/credentials.json
+**/token.json
+**/service-account-key.json
+
+# Mac OS specific
+.DS_Store
+
+# IDE specific
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# Dart specific
+.packages
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+
+# Generated files
+.g.dart
+.freezed.dart
+.config.dart
+
+# Build outputs
+build/
+.dart_tool/
+.pub-cache/
+.pub/
+
+# Coverage
+coverage/
+
+# Non-essential files
+*.iml
+*.ipr
+*.iws
+.gradle/
+
+# Keystore files
+*.jks
+*.keystore
+*.p12
+*.pfx
+
+# Private keys
+*.pem
+*.key
+*.crt
+
+# Database files  
+*.db
+*.sqlite
+*.sqlite3
+
+# Logs
+*.log
+logs/
+
+# OS files
+Thumbs.db
+.DS_Store
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# Node modules (if used)
+node_modules/
+npm-debug.log
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
