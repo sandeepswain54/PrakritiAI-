@@ -7,7 +7,7 @@
 
 PrakritiAI is an intelligent Ayurvedic application that analyzes Vata, Pitta, and Kapha doshas to recommend personalized therapies, treatments, and clinics based on individual constitution.
 
-## Features!
+## Features!!
 
 - **Prakriti Analysis**: Determine your unique Ayurvedic constitution
 - **Personalized Recommendations**: Get tailored therapy suggestions
@@ -20,7 +20,7 @@ PrakritiAI is an intelligent Ayurvedic application that analyzes Vata, Pitta, an
 - Flutter SDK 3.0+
 - Dart 3.0+
 
-### Setup
+### Setup!
 
 1. Clone the repository:
 ```bash
