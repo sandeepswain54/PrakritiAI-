@@ -1,4 +1,4 @@
-## 📸 PrakritiAI App!
+## 📸 PrakritiAI App
 
 <img src="assets/jj.png" width="250"/>
 <img src="assets/pppp4.png" width="250"/>
